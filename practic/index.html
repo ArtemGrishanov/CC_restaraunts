@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <style>
+        body {
+            background: url(i/bg1.jpg) center 0 repeat #cc3b07;
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            line-height: 18px;
+            color: #858275;
+        }
+        /*.wrapper {*/
+            /*width: 100%;*/
+        /*}*/
+        .header-row {
+            background: url(i/bg3.jpg) center 0 repeat;
+            padding: 19px 0 15px 0;
+            height: 55px;
+        }
+        .logo {
+            width: 40%;
+            display: block;
+            float: left;
+        }
+        /*.social {*/
+            /*margin-top: 7px;*/
+            /*width: 50%;*/
+            /*float: left;*/
+        /*}*/
+        /*.social_item {*/
+            /*line-height: 18px;*/
+            /*display: inline-block;*/
+            /*list-style-type: none;*/
+            /*float: left;*/
+            /*margin-left: 6px;*/
+        /*}*/
+        .navigation {
+            position: relative;
+        }
+        .navigation-row {
+            z-index: 1000;
+            position: relative;
+            top: auto;
+            padding-bottom: 5px;
+            background-color: #fff;
+        }
+        .menu {
+            position: relative;
+            overflow: visible;
+            clear: both;
+            height: 54px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .menu_item {
+            padding: 0;
+            margin: 0 0px 0 0px;
+            position: relative;
+            z-index: 6;
+            float: left;
+            list-style: none;
+            display: list-item;
+            line-height: 18px;
+        }
+        .menu_item > a {
+            color: #5d722d;
+            text-decoration: none;
+            position: relative;
+            font-size: 20px;
+            line-height: 1.2em;
+            font-family: 'Fjalla One', sans-serif;
+            background: none;
+            text-transform: uppercase;
+            display: block;
+            padding: 18px 19px 12px 20px;
+            -webkit-border-radius: 0px;
+            -moz-border-radius: 0px;
+            border-radius: 0px;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+        .menu_item:hover {
+            background-color: #cc3b07;
+        }
+        .menu_item > a:hover {
+            color: #fff;
+        }
+        .slider {
+            width: 100%;
+            height: 400px;
+            position: relative;
+        }
+        .slide {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-position: center;
+            background-size: cover;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+        .slide.__1 {
+            background-image: url(i/slide1.jpg);
+        }
+        .slide.__2 {
+            background-image: url(i/slide2.jpg);
+        }
+        .slide.__3 {
+            background-image: url(i/slide3.jpg);
+        }
+        .module2 {
+            color: #5d722d;
+            background: url(i/bg2.jpg) center 0 repeat #e1dcc6;
+            height: 400px;
+        }
+        .founder_avatar {
+            background: url(i/index_avatar.jpg) center 0 no-repeat;
+            width: 300px;
+            height: 300px;
+        }
+
+        .module3 {
+            color: #fbf6eb;
+            background: url(i/bg3.jpg) center 0 repeat #5d722d;
+            height: 400px;
+        }
+        .mod3_column_wrapper {
+            margin-left: -80px;
+            padding-top: 10px;
+        }
+        .content {
+            margin: 0 auto;
+            width: 1156px;
+        }
+        .caption {
+            margin-top: 30px;
+        }
+        .content_column {
+            float: left;
+            width: 300px;
+            height: 300px;
+            margin-left: 80px;
+        }
+        .content_column.__1 {
+            background: url(i/hot_stub.jpg) center 0 no-repeat;;
+        }
+        .content_column.__2 {
+             background: url(i/hot_stub.jpg) center 0 no-repeat;;
+        }
+        .content_column.__3 {
+            background: url(i/hot_stub.jpg) center 0 no-repeat;;
+        }
+
+
+
+        .footer {
+            padding-top: 84px;
+            position: relative;
+        }
+        .footer_columns_wrapper {
+            color: #fbf6eb;
+            width: 1156px;
+            background: url(i/bg1.jpg) center 0 repeat #cc3b07;
+            margin: 0 auto 0 -20px;
+        }
+        .footer_column {
+            float: left;
+            width: 260px;
+            padding-left: 20px;
+        }
+        .copyright {
+            clear: both;
+            padding: 50px 0 50px 20px;
+        }
+    </style>
+    <script>
+        var s = 1;
+        function next() {
+            var e = document.getElementById('s'+ s.toString());
+            e.style.opacity = '0';
+            var ns = s+1;
+            if (ns > 3) {
+                ns = 1;
+            }
+            var ne = document.getElementById('s'+ ns.toString());
+            ne.style.opacity = '1';
+
+            s = ns;
+            setTimeout(next, 3000);
+        }
+        setTimeout(next, 3000);
+    </script>
+</head>
+<body>
+    <div class="header-row">
+        <div class="content">
+            <div class="logo">
+                <img src="i/logo.png" alt="Curtis brewery">
+            </div>
+            <!--<div class="social">-->
+                <!--<ul>-->
+                    <!--<li class="social_item">-->
+                        <!--<a class="google" href="#">1</a>-->
+                    <!--</li>-->
+                    <!--<li class="social_item">-->
+                        <!--<a class="twitter" href="#">2</a>-->
+                    <!--</li>-->
+                    <!--<li class="social_item">-->
+                        <!--<a class="facebook" href="#">3</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        </div>
+    </div>
+    <div class="navigation-row">
+        <div class="content">
+            <nav class="navigation">
+                <ul class="menu">
+                    <li class="menu_item">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#">Products</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#">Events</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="slider">
+        <div id="s1" class="slide __1"></div>
+        <div id="s2" class="slide __2" style="opacity: 0"></div>
+        <div id="s3" class="slide __3" style="opacity: 0"></div>
+    </div>
+    <div class="module2">
+        <div class="content">
+            <div>WELCOME TO OUR BREWERY</div>
+            <div class="mod3_column_wrapper">
+                <div class="content_column">
+                    <div class="founder_avatar">
+
+                    </div>
+                </div>
+                <div class="content_column">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while</div>
+            </div>
+        </div>
+    </div>
+    <div class="module3">
+        <div class="content">
+            <div>ГОРЯЧИЕ ПРЕДЛОЖЕНИЯ</div>
+            <div class="mod3_column_wrapper">
+                <div class="content_column __1">
+                </div>
+                <div class="content_column __2">
+                </div>
+                <div class="content_column __3">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+            <div class="content">
+                <div class="footer_columns_wrapper">
+                    <div class="footer_column">
+                        The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! "Now fax quiz Jack!" my brave ghost pled.
+                    </div>
+                    <div class="footer_column">
+                        The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy
+                    </div>
+                    <div class="footer_column">
+                        The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! "Now fax quiz Jack!" my brave ghost pled.
+                    </div>
+                    <div class="footer_column">
+                        The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy
+                    </div>
+                    <div class="copyright">Copyright 2014 (c)</div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
